@@ -1,0 +1,45 @@
+{
+  "name": "generator-maple",
+  "version": "0.1.0",
+  "description": "A generator for Maple project",
+  "keywords": [
+    "yeoman-generator",
+    "maple",
+    "css",
+    "sass",
+    "bem"
+  ],
+  "homepage": "https://github.com/t32k/generator-maple",
+  "bugs": "https://github.com/t32k/generator-maple/issues",
+  "author": {
+    "name": "Koji Ishimoto",
+    "email": "ijok.ijok@gmail.com",
+    "url": "https://github.com/t32k"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/t32k/generator-maple.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.13.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

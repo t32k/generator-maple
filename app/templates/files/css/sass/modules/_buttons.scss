@@ -1,0 +1,33 @@
+// Buttons
+// 
+// A description.
+// 
+// Markup: <some markup with a specific {$modifier} like class or a pseudo class >
+// 
+// .class      - description of the class state
+// :pseudo     - description of the pseudo state
+// 
+// Styleguide 3 (digit number to increment eg chapter)
+
+.btn {
+	display: block;
+	border-radius: 4px;
+	padding: 0 1em;
+	background: $color-a;
+	color: #fff;
+	text-align: center;
+	line-height: 42px;
+	// State
+	&.is-pressed {
+		box-shadow: rgba(0, 0, 0, 0.6) 0 2px 4px 0 inset;
+	}
+	&.is-disabled {
+		opacity: 0.5;
+	}
+}
+.btn--a {
+	background: $color-b;
+}
+.btn--b {
+	background: $color-c;
+}

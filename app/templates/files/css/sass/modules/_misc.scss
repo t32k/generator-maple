@@ -1,0 +1,18 @@
+// Misc.
+// 
+// A description.
+// 
+// Markup: <some markup with a specific {$modifier} like class or a pseudo class >
+// 
+// .class      - description of the class state
+// :pseudo     - description of the pseudo state
+// 
+// Styleguide 7 (digit number to increment eg chapter)
+
+.rule {
+	&.rule-a {}
+	&.rule-b {}
+	&.rule-c {}
+}
+
+

@@ -1,0 +1,25 @@
+// Bars
+// 
+// A description.
+// 
+// Markup: <some markup with a specific {$modifier} like class or a pseudo class >
+// 
+// .class      - description of the class state
+// :pseudo     - description of the pseudo state
+// 
+// Styleguide 1 (digit number to increment eg chapter)
+.bar-head {
+	border-bottom: 1px #bbb solid;
+	background: url(/files/img/readme/logo.png) center center no-repeat;
+	background-size: 160px 40px;
+	color: #333;
+	text-align: center;
+	line-height: 80px;
+}
+.bar-nav {
+
+}
+
+.bar-tool { }
+
+.bar-srch { }
