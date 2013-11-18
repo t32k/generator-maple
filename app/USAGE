@@ -1,0 +1,5 @@
+Description:
+    Creates a new basic Maple project.
+
+Example:
+    yo maple

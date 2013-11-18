@@ -22,21 +22,28 @@ MapleGenerator.prototype.askFor = function askFor() {
     // welcome message
     if (!this.options['skip-welcome-message']) {
         console.log(this.yeoman);
-        console.log('Out of the box I include HTML5 Boilerplate and jQuery.');
+        console.log('Create basic Maple Project.');
     }
 
   var prompts = [{
-    name: 'proj_name',
-    message: 'Project Name',
-    default: 'maple'
+    name: 'name',
+    message: 'Project Name'
+  },{
+    name: 'description',
+    default: 'The better HTML/CSS Project'
+  }, {
+    name: 'version',
+    default: 0.0.1
   }];
 
   this.prompt(prompts, function (props) {
-
+    this.props = props;
     cb();
   }.bind(this));
 };
 
 MapleGenerator.prototype.app = function app() {
-  this.directory('.', '.')
+  this.directory('src/.', '.')
+  this.template('_bower.json', 'bower.json');
+  this.template('_package.json', 'package.json');
 };
