@@ -26,13 +26,15 @@ MapleGenerator.prototype.askFor = function askFor() {
     }
 
   var prompts = [{
-    name: 'name',
+    name: 'proj_name',
     message: 'Project Name'
   },{
     name: 'description',
+    message: 'Description',
     default: 'The better HTML/CSS Project'
   }, {
     name: 'version',
+    message: 'Version',
     default: '0.0.1'
   }];
 

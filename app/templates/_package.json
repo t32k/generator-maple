@@ -1,5 +1,5 @@
 {
-  "name": "<%= props.name %>",
+  "name": "<%= props.proj_name %>",
   "version": "<%= props.version %>",
   "description": "<%= props.title %>",
   "devDependencies": {
