@@ -33,7 +33,7 @@ MapleGenerator.prototype.askFor = function askFor() {
     default: 'The better HTML/CSS Project'
   }, {
     name: 'version',
-    default: 0.0.1
+    default: '0.0.1'
   }];
 
   this.prompt(prompts, function (props) {
