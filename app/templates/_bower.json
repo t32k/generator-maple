@@ -3,6 +3,6 @@
   "version": "<%= props.version %>",
   "description": "<%= props.title %>",
   "dependencies": {
-    "jquery": "~2.0.3"
+    "jquery": "~2.1.0"
   }
 }
