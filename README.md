@@ -1,6 +1,7 @@
-# generator-maple [![NPM version](https://badge.fury.io/js/generator-maple.png)](http://badge.fury.io/js/generator-maple)
+# generator-maple
 
-A generator maple for [Yeoman](http://yeoman.io).
+A generator maple for [Yeoman](http://yeoman.io).  [![NPM version](https://badge.fury.io/js/generator-maple.png)](http://badge.fury.io/js/generator-maple)
+
 
 ![](http://i.imgur.com/OrSRfY2.jpg)
 
