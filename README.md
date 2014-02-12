@@ -1,4 +1,4 @@
-# generator-maple [![Build Status](https://secure.travis-ci.org/t32k/generator-maple.png?branch=master)](https://travis-ci.org/t32k/generator-maple)
+# generator-maple [![NPM version](https://badge.fury.io/js/generator-maple.png)](http://badge.fury.io/js/generator-maple)
 
 A generator maple for [Yeoman](http://yeoman.io).
 
