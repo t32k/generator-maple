@@ -1,15 +1,12 @@
 # generator-maple [![Build Status](https://secure.travis-ci.org/t32k/generator-maple.png?branch=master)](https://travis-ci.org/t32k/generator-maple)
 
-A generator for [Yeoman](http://yeoman.io).
+A generator maple for [Yeoman](http://yeoman.io).
 
+![](http://i.imgur.com/OrSRfY2.jpg)
 
 ## Getting Started
 
 ### What is Yeoman?
-
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
 
 Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
 
