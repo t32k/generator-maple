@@ -3,6 +3,8 @@
   "version": "<%= props.version %>",
   "description": "<%= props.title %>",
   "dependencies": {
-    "jquery": "~2.1.0"
+    "jquery": "~2.1.1",
+    "backbone": "~1.1.2",
+    "underscore": "~1.7.0"
   }
 }

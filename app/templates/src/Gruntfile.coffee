@@ -3,18 +3,18 @@ module.exports = (grunt) ->
 
   # Project configuration.
   grunt.initConfig
-    # Metadata.
+  # Metadata.
     pkg: grunt.file.readJSON 'package.json'
 
-    # Parse CSS and add vendor-prefixed CSS properties using the Can I Use database.
+  # Parse CSS and add vendor-prefixed CSS properties using the Can I Use database.
     autoprefixer:
       options:
         browsers: ['ios >= 5', 'android >= 2.3']
       dist:
         src: 'build/files/css/maple.css'
 
-    # Start a static web server.
-    # Reload assets live in the browser
+  # Start a static web server.
+  # Reload assets live in the browser
     connect:
       app:
         options:
@@ -27,7 +27,7 @@ module.exports = (grunt) ->
           base: 'doc/'
           open: 'http://localhost:8081/'
 
-    # Sort CSS properties in specific order.
+  # Sort CSS properties in specific order.
     csscomb:
       dist:
         options:
@@ -35,14 +35,14 @@ module.exports = (grunt) ->
         files:
           'build/files/css/maple.css': ['build/files/css/maple.css']
 
-    # Lint CSS files.
+  # Lint CSS files.
     csslint:
       dist:
         options:
           csslintrc: '.csslintrc'
         src: ['build/files/css/maple.css']
 
-    # Minify CSS files with CSSO.
+  # Minify CSS files with CSSO.
     csso:
       dist:
         options:
@@ -57,7 +57,7 @@ module.exports = (grunt) ->
         files:
           'build/files/css/maple.min.css': ['build/files/css/maple.css']
 
-    # Optimize PNG, JPEG, GIF images with grunt task.
+  # Optimize PNG, JPEG, GIF images with grunt task.
     image:
       options:
         optimizationLevel: 3
@@ -69,7 +69,7 @@ module.exports = (grunt) ->
           dest: "build/files/img/sprite/"
         ]
 
-    # KSS styleguide generator for grunt.
+  # KSS styleguide generator for grunt.
     kss:
       options:
         includeType: 'css'
@@ -77,16 +77,16 @@ module.exports = (grunt) ->
         template: 'doc/template'
       dist:
         files:
-          # dest : src
+        # dest : src
           'doc/': ['src/stylesheets/']
 
-    # Grunt task to compile Sass SCSS to CSS
+  # Grunt task to compile Sass SCSS to CSS
     sass:
       dist:
         files:
           'build/files/css/maple.css': 'src/stylesheets/maple.scss'
 
-    # Grunt task for creating spritesheets and their coordinates
+  # Grunt task for creating spritesheets and their coordinates
     sprite:
       dist:
         src: 'build/files/img/sprite/tabs/*.png'
@@ -96,15 +96,9 @@ module.exports = (grunt) ->
         algorithm: 'binary-tree'
         padding: 2
         cssTemplate: 'build/files/img/sprite/spritesmith.mustache'
-        # cssOpts: { functions: false }
+  # cssOpts: { functions: false }
 
-    # A grunt task for removing unused CSS from your project build/s
-    uncss:
-      dist:
-        files:
-          'build/files/css/tidy.css': ['build/index.html']
-
-    # Run tasks whenever watched files change.
+  # Run tasks whenever watched files change.
     watch:
       options:
         livereload: true
@@ -115,7 +109,7 @@ module.exports = (grunt) ->
         files: ['build/files/img/sprite/*/*.png']
         tasks: ['sprite']
 
-    # SVG to webfont converter for Grunt.
+  # SVG to webfont converter for Grunt.
     webfont:
       dist:
         src: 'src/svg/*.svg'
@@ -133,7 +127,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-kss'
   grunt.loadNpmTasks 'grunt-sass'
   grunt.loadNpmTasks 'grunt-csso'
-  grunt.loadNpmTasks 'grunt-uncss'
   grunt.loadNpmTasks 'grunt-image'
   grunt.loadNpmTasks 'grunt-csscomb'
   grunt.loadNpmTasks 'grunt-webfont'
